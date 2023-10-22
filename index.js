@@ -35,7 +35,8 @@
 // // Name = 'mohan'
 // console.log(Name)
 
-//typeof
+//typeof operator
+// defenition :- Typeof in JavaScript is an operator used for type checking and returns the data type of the operand passed to it. The operand can be any variable, function, or object whose type you want to find out using the typeof operator.
 
 // const suman = true;
 
@@ -44,10 +45,16 @@
 // const number1 = 10;
 // const number2 = 10;
 
+
+// == and ===
+// defenition :- Both are comparison operators. The difference between both the operators is that “==” is used to compare values whereas, “ === “ is used to compare both values and types.
+
 // // console.log(number1 == number2) // == only check the values
 
 // console.log(number1 === number2) // ===check the values and type as well
 
+// Spread Operator
+// defenition :- The JavaScript spread operator ( ... ) allows us to quickly copy all or part of an existing array or object into another array or object.
 
 // const person1 = {
 //     Name : 'suman',
@@ -98,6 +105,7 @@
 // console.log("After calling a function ",obj.name,obj.age)
 
 // selfInvoking function
+// defenition :- A self-invoking function is a JavaScript function that executes immediately after it has been defined. This is done by wrapping the function in parentheses and then immediately calling it.
 
 // (function(){
 //     console.log("This is self Invoking function");
@@ -105,6 +113,7 @@
 
 
 //callbacks
+// defenition :- A JavaScript callback is a function which is to be executed after another function has finished execution. A more formal definition would be - Any function that is passed as an argument to another function so that it can be executed in that other function is called as a callback function.
 
 // function greet(name,callback){
 //     console.log("Hello Mr "+name);
@@ -125,6 +134,10 @@
 
 // paisa lauta dega
 // paisa nhi dega
+
+
+//Promises
+//defenition :- A promise in JavaScript is an object that represents the eventual completion of an asynchronous operation and its resulting value. It is used to handle asynchronous operations in a more predictable way.
 
 // promise has three stage
 
@@ -164,7 +177,6 @@
 // watchTutorial((msg)=>console.log(msg),(err)=>console.log(err))
 
 // callback change to promises
-
 // const userLeft = true;
 // const watchingAdd = false;
 
@@ -215,7 +227,9 @@
 //     fetchDataAPIThree,
 // ]).then((suman)=>console.log(suman))
 
+
 // async await
+// defenition :- Use of async and await enables the use of ordinary try / catch blocks around asynchronous code. Note: The await keyword is only valid inside async functions within regular JavaScript code. If you use it outside of an async function's body, you will get a SyntaxError .
 
 // function otpVarify(otp) {
 //     return new Promise((resolve, reject) => {
@@ -255,6 +269,8 @@
 
 // otpVarificationFunction();
 
+//Hoisting in javascript.
+// defenition :- Hoisting is the default behaviour of javascript where all the variable and function declarations are moved on top.
 
 // hoistedVar = 3;
 // console.log(hoistedVar)
@@ -269,14 +285,21 @@
 //     // var x;
 // }
 
+//Coercion in javascript.
+// defeniton :-  Implicit type coercion in javascript is the automatic conversion of value from one data type to another. It takes place when the operands of an expression are of different data types.
 
 // string coercion
 // let x = 3;
 // let y = "5";
 
 
-// // console.log(x+y) // stirng coercion
+// // console.log(x+y) // string coercion
 // console.log(x-y) // number coercion
+
+//NaN property in JavaScript?
+// defenition :- isNaN() property represents the “Not-a-Number” value. It indicates a value that is not a legal number.
+
+//typeof of NaN will return a Number.
 
 // isNaN() // Not a Number
 
@@ -284,6 +307,9 @@
 // console.log(isNaN(10));
 // console.log(isNaN(undefined));
 // console.log(isNaN(true));
+
+// Higher Order Functions in javascript.
+// defenition :- Functions that operate on other functions, either by taking them as arguments or by returning them, are called higher-order functions.
 
 // function higherOrderFun(suman){
 //     console.log("Higher order Function")
@@ -304,6 +330,9 @@
 
 // respose();
 
+// this keyword
+// defenition :- In JavaScript, the this keyword always refers to an object. The thing about it is that the object it refers to will vary depending on how and where this is being called.
+
 // const person = {
 //     empName : 'ram',
 //         deg : 'react developer',
@@ -316,6 +345,7 @@
 
 // console.log("This is object ",person.getThis())
 
+// call()
 // const person1 = {
 //     name:'ram',
 //     age:200,
@@ -329,7 +359,7 @@
 // }
 // console.log(person1.sayName.call(person2,'indore','India'))
 
-//apply
+//apply()
 // const person1 = {
 //     name:'ram',
 //     age:200,
@@ -344,6 +374,7 @@
 // console.log(person1.sayName.apply(person2,['indore','India']))
 
 
+// bind()
 // const person1 = {
 //     name:'ram',
 //     age:200,
@@ -360,6 +391,7 @@
 // console.log(response())
 
 // currying
+// defenition :- Currying is an advanced technique to transform a function of arguments n, to n functions of one or fewer arguments.
 
 // function calculate(a){
 //     return function(b){
@@ -370,6 +402,9 @@
 // }
 
 // console.log(calculate(10)(20)(30))
+
+//Closures in JavaScript.
+// defenition :- Closures are an ability of a function to remember the variables and functions that are declared in its outer scope.
 
 // function random(){
 //     let obj = {
@@ -402,6 +437,10 @@
 //     const time = new Date();
 //     console.log(time)
 // }, 1000);
+
+
+//Anonymous Functions
+// defenition :- It is a function that does not have any name associated with it. Normally we use the function keyword before the function name to define a function in JavaScript, however, in anonymous functions in JavaScript, we use only the function keyword without the function name.
 
 let show = function(){
     console.log('Anoymous function')
